@@ -9,12 +9,10 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       host: '0.0.0.0',
     },
-    // GitHubのリポジトリ名に合わせる設定（重要）
-    base: '/portfolio/',
+    base: '/portfolio/', // これが抜けると404になります
     plugins: [react()],
-    // ビルドの出力先を 'docs' フォルダに変更（ここが重要）
     build: {
-      outDir: 'docs',
+      outDir: 'docs',    // これで docs フォルダに正しい設定で書き出されます
     },
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
