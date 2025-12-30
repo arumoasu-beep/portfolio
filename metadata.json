@@ -1,0 +1,8 @@
+{
+  "name": "Professional Freelance Portfolio",
+  "description": "A high-end, responsive portfolio for a multi-skilled freelancer specializing in video editing, WordPress development, GAS automation, and virtual assistant services.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
